@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.gaofei.zhbj.ui.RollViewPager
+        android:id="@+id/newscenter_news_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" >
+    </com.gaofei.zhbj.ui.RollViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/newscenter_news_viewpager"
+        android:background="#99000000" >
+
+        <TextView
+            android:id="@+id/newscenter_news_viewpager_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:text="蜗居生活"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/newscenter_news_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="10dip"
+            app:fillColor="#FF0000"
+            app:pageColor="#FFFFFF"
+            app:radius="3dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

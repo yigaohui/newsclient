@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gaofei.zhbj.ui.NoScrollViewPager
+        android:id="@+id/homefragment_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/basepager_rg_selectbar" >
+    </com.gaofei.zhbj.ui.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/basepager_rg_selectbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <RadioButton
+            android:id="@+id/homefragment_selectbar_rbtn_home"
+            style="@style/SelectBar"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/homefragment_selectbar_rbtn_newscenter"
+            style="@style/SelectBar"
+            android:drawableTop="@drawable/selector_newscenter"
+            android:text="新闻中心" />
+
+        <RadioButton
+            android:id="@+id/homefragment_selectbar_rbtn_smartservice"
+            style="@style/SelectBar"
+            android:drawableTop="@drawable/selector_smartservice"
+            android:text="智慧服务" />
+
+        <RadioButton
+            android:id="@+id/homefragment_selectbar_rbtn_gov"
+            style="@style/SelectBar"
+            android:drawableTop="@drawable/selector_govaffairs"
+            android:text="政务" />
+
+        <RadioButton
+            android:id="@+id/homefragment_selectbar_rbtn_setting"
+            style="@style/SelectBar"
+            android:drawableTop="@drawable/selector_setting"
+            android:text="设置" />
+    </RadioGroup>
+
+</RelativeLayout>
